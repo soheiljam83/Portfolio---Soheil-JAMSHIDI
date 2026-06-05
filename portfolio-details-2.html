@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Environnement Linux & Outils de Développement </title>
+  <meta name="description" content="S1.03 — Installation et configuration d'un environnement Linux et outils de développement — BUT Informatique Semestre 1">
+  <meta name="keywords" content="Debian, Linux, Java, JDK, Git, Netbeans, BUT Informatique, IUT Grenoble">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Noto+Sans:ital,wght@0,100;0,400;0,700&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet"></head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">EasyFolio</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Accueil</a></li>
+          <li><a href="index.html#about">À propos</a></li>
+          <li><a href="index.html#resume">CV</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <div class="header-social-links">
+      
+        <a href="https://www.linkedin.com/in/soheil-jamshidi-b42774396" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="page-title">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Accueil</a></li>
+            <li class="breadcrumb-item"><a href="index.html#portfolio">Semestre 1</a></li>
+            <li class="breadcrumb-item active current">S1.03 — Environnement Linux</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="title-wrapper">
+        <h1>Configuration d'un environnement Linux &amp; outils de développement</h1>
+        <p>Semestre 1 · BUT Informatique Parcours A · IUT 2 Grenoble</p>
+      </div>
+    </div>
+
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4 g-lg-5">
+
+          
+          <div class="col-lg-5">
+
+            <div class="card border-0 shadow-sm mb-4 p-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge rounded-pill px-3 py-2 me-3" style="background-color: var(--accent-color); font-size: 0.85rem;">TP 1</span>
+                <h4 class="mb-0">Installation d'un poste de travail</h4>
+              </div>
+              <p class="text-muted mb-3">Installation de Debian 12 sur une machine virtuelle, configuration du système, gestion des packages et mise en place de l'environnement utilisateur sous KDE Plasma.</p>
+              <h6 class="fw-semibold mb-2"><i class="bi bi-check2-circle me-2" style="color: var(--accent-color);"></i>Étapes clés</h6>
+              <ul class="list-unstyled ps-3 mb-0">
+                <li class="mb-1"><i class="bi bi-dot"></i>Vérification d'intégrité de l'image ISO (SHA-512)</li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Installation guidée de Debian 12 "Bookworm"</li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Configuration de <code>sudo</code>, <code>apt</code> et <code>bash</code></li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Exploration et gestion des packages installés</li>
+              </ul>
+            </div>
+            <div class="card border-0 shadow-sm mb-4 p-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge rounded-pill px-3 py-2 me-3" style="background-color: var(--accent-color); font-size: 0.85rem;">TP 2</span>
+                <h4 class="mb-0">Installation d'outils de développement</h4>
+              </div>
+              <p class="text-muted mb-3">Comparaison des trois gestionnaires de packages Linux (apt, snap, flatpak), installation du JDK, de Git et de l'IDE NetBeans dans différentes configurations.</p>
+              <h6 class="fw-semibold mb-2"><i class="bi bi-check2-circle me-2" style="color: var(--accent-color);"></i>Étapes clés</h6>
+              <ul class="list-unstyled ps-3 mb-0">
+                <li class="mb-1"><i class="bi bi-dot"></i>Installation de VLC via apt, snap et flatpak (comparaison)</li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Installation du JDK et vérification</li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Utilisation de Git et clonage d'un dépôt</li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Installation de NetBeans (archive, snap, flatpak)</li>
+              </ul>
+            </div>
+
+            <div class="card border-0 shadow-sm p-4" data-aos="fade-up" data-aos-delay="300">
+              <h6 class="fw-semibold mb-3"><i class="bi bi-book me-2" style="color: var(--accent-color);"></i>Ressources mobilisées</h6>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill border" style="color: var(--heading-color); border-color: var(--accent-color) !important; padding: 0.5rem 1rem;">R1.01 — Init. développement</span>
+                <span class="badge rounded-pill border" style="color: var(--heading-color); border-color: var(--accent-color) !important; padding: 0.5rem 1rem;">R1.08 — Systèmes d'exploitation</span>
+                <span class="badge rounded-pill border" style="color: var(--heading-color); border-color: var(--accent-color) !important; padding: 0.5rem 1rem;">R1.09 — Réseaux informatiques</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7">
+            <div class="position-sticky" style="top: 40px">
+              <div class="portfolio-description">
+
+                <div class="info-block">
+                  <h5><i class="bi bi-file-text me-1"></i>Description</h5>
+                  <p>
+                    Ce module pratique couvre l'installation et la configuration complète d'un poste de travail Linux destiné au développement logiciel. Le travail s'est déroulé en deux séances : la première consacrée à l'installation de Debian 12 sur une machine virtuelle QEMU/KVM et à la configuration du système (gestion des utilisateurs, des droits, du gestionnaire de packages <code>apt</code>), la seconde à l'installation et la comparaison de différents outils de développement en utilisant les trois gestionnaires de packages majeurs sous Linux — apt, snap et flatpak.
+                  </p>
+                </div>
+
+                <hr class="section-divider">
+
+              
+                <div class="info-block">
+                  <h5><i class="bi bi-bullseye me-1"></i>Objectifs</h5>
+                  <p>
+                    Acquérir une autonomie complète dans la mise en place d'un environnement de développement Linux : installer et configurer un système Debian, comprendre les différences entre les gestionnaires de packages (apt, snap, flatpak), installer les outils essentiels du développeur (JDK, Git, IDE) et documenter rigoureusement chaque étape. Un objectif secondaire consistait à comparer concrètement les trois méthodes d'installation en termes de version disponible, taille et facilité d'utilisation.
+                  </p>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="info-block">
+                  <h5><i class="bi bi-person me-1"></i>Travail individuel</h5>
+                  <p>
+                    Projet entièrement individuel. Chaque séance de quatre heures exigeait de mener l'intégralité du processus d'installation de manière autonome, sans filet. Cette contrainte m'a appris à faire preuve de méthode, à chercher des solutions par moi-même face aux obstacles techniques, et à documenter avec précision mes démarches. À l'issue de chaque séance, j'ai rédigé un rapport détaillé (étapes suivies, configurations appliquées, difficultés rencontrées et résultats obtenus) et produit une carte mentale pour synthétiser visuellement les concepts clés.
+                  </p>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="info-block">
+                  <h5><i class="bi bi-diagram-2 me-1"></i>Carte mentale</h5>
+                  <p>
+                    Une carte mentale a été réalisée pour chaque TP afin d'organiser et de structurer les connaissances acquises. Elle représente les grandes étapes du TP, les commandes utilisées, les concepts système abordés (virtualisation, gestion des droits, formats de packages, arborescence Linux) et les résultats observés. Cet outil a facilité la révision et la rédaction du rapport en offrant une vue d'ensemble claire de l'enchaînement des tâches.
+                  </p>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="info-block">
+                  <h5><i class="bi bi-tools me-1"></i>Techniques &amp; savoir-faire acquis</h5>
+                  <div>
+                    <span class="tech-tag">Linux / Debian 12</span>
+                    <span class="tech-tag">Virtualisation (QEMU/KVM)</span>
+                    <span class="tech-tag">Ligne de commande Bash</span>
+                    <span class="tech-tag">apt / snap / flatpak</span>
+                    <span class="tech-tag">Gestion des droits (sudo)</span>
+                    <span class="tech-tag">JDK Java</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">NetBeans IDE</span>
+                    <span class="tech-tag">Vérification SHA-512</span>
+                    <span class="tech-tag">Liens symboliques</span>
+                    <span class="tech-tag">Rédaction de rapport technique</span>
+                    <span class="tech-tag">Carte mentale</span>
+                  </div>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="portfolio-info">
+                  <h3>Informations</h3>
+                  <ul>
+                    <li><strong>Formation</strong> BUT Informatique — Parcours A</li>
+                    <li><strong>Semestre</strong> S1</li>
+                    <li><strong>Durée</strong> 2 × 4 heures</li>
+                    <li><strong>Travail</strong> Individuel</li>
+                    <li><strong>Livrables</strong> Rapport technique + carte mentale</li>
+                    <li><strong>Compétences</strong> Administrer (C3)</li>
+                    <li><strong>Établissement</strong> IUT 2 Grenoble</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">EasyFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+       
+        <a href="https://www.linkedin.com/in/soheil-jamshidi-b42774396" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+      </div>
+    
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

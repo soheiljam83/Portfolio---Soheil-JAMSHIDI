@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SAÉ 2.04 — Exploitation d'une base de données | Portfolio</title>
+  <meta name="description" content="SAÉ 2.04 — Analyse nutritionnelle des confiseries françaises avec SQL et R — BUT Informatique Semestre 2">
+  <meta name="keywords" content="SQL, R, ggplot2, Base de données, Visualisation, Nutriscore, BUT Informatique, IUT Grenoble">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Noto+Sans:ital,wght@0,100;0,400;0,700&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet"></head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">EasyFolio</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Accueil</a></li>
+          <li><a href="index.html#about">À propos</a></li>
+          <li><a href="index.html#resume">CV</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <div class="header-social-links">
+        
+        <a href="https://www.linkedin.com/in/soheil-jamshidi-b42774396" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="page-title">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Accueil</a></li>
+            <li class="breadcrumb-item"><a href="index.html#portfolio">Semestre 2</a></li>
+            <li class="breadcrumb-item active current">SAÉ 2.04 — Exploitation d'une base de données</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="title-wrapper">
+        <h1>Les confiseries en France — analyse nutritionnelle</h1>
+        <p>Semestre 2 · BUT Informatique Parcours A · IUT 2 Grenoble</p>
+      </div>
+    </div>
+
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4 g-lg-5">
+
+          <!-- LEFT: Étape cards -->
+          <div class="col-lg-5">
+
+            <!-- Étape 1 -->
+            <div class="card border-0 shadow-sm mb-4 p-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge rounded-pill px-3 py-2 me-3" style="background-color: var(--accent-color); font-size: 0.85rem;">Étape 1</span>
+                <h4 class="mb-0">Nettoyage &amp; modélisation des données</h4>
+              </div>
+              <p class="text-muted mb-3">Exploration et nettoyage d'une très grande base de données alimentaires (Open Food Facts). Filtrage sur les confiseries et produits sucrés du marché français. Suppression des entrées incomplètes ou incohérentes pour obtenir un jeu de données exploitable de 25 481 produits valides.</p>
+              <h6 class="fw-semibold mb-2"><i class="bi bi-check2-circle me-2" style="color: var(--accent-color);"></i>Livrables</h6>
+              <ul class="list-unstyled ps-3 mb-0">
+                <li class="mb-1"><i class="bi bi-dot"></i>Fichier CSV nettoyé</li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Scripts SQL de nettoyage et filtrage</li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Documentation des choix de nettoyage</li>
+              </ul>
+            </div>
+
+            <!-- Étape 2 -->
+            <div class="card border-0 shadow-sm mb-4 p-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge rounded-pill px-3 py-2 me-3" style="background-color: var(--accent-color); font-size: 0.85rem;">Étape 2</span>
+                <h4 class="mb-0">Requêtes SQL &amp; analyse des données</h4>
+              </div>
+              <p class="text-muted mb-3">Interrogation avancée de la base pour explorer les valeurs nutritionnelles : teneur en glucides, lipides, sucres, protéines et énergie. Corrélations entre variables nutritionnelles et Nutriscore. Distinction entre produits bio et non-bio.</p>
+              <h6 class="fw-semibold mb-2"><i class="bi bi-check2-circle me-2" style="color: var(--accent-color);"></i>Livrables</h6>
+              <ul class="list-unstyled ps-3 mb-0">
+                <li class="mb-1"><i class="bi bi-dot"></i>Requêtes SELECT avec agrégations</li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Tableaux de synthèse par grade Nutriscore</li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Rapport d'analyse des corrélations nutritionnelles</li>
+              </ul>
+            </div>
+
+            <!-- Étape 3 -->
+            <div class="card border-0 shadow-sm mb-4 p-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge rounded-pill px-3 py-2 me-3" style="background-color: var(--accent-color); font-size: 0.85rem;">Étape 3</span>
+                <h4 class="mb-0">Visualisation avec R &amp; ggplot2</h4>
+              </div>
+              <p class="text-muted mb-3">Création de visualisations statistiques : répartition des grades Nutriscore, boxplots de lipides et glucides par grade, nuages de points énergie/sucres et énergie/protéines, histogrammes ridgelines. Document R Markdown compilé avec analyses commentées.</p>
+              <h6 class="fw-semibold mb-2"><i class="bi bi-check2-circle me-2" style="color: var(--accent-color);"></i>Livrables</h6>
+              <ul class="list-unstyled ps-3 mb-0">
+                <li class="mb-1"><i class="bi bi-dot"></i>Document R Markdown (<code>squelette_avec_exemples.Rmd</code>)</li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Graphiques ggplot2 (barres, boxplots, scatter, ridges)</li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Rapport HTML compilé avec interprétations</li>
+              </ul>
+            </div>
+
+            <!-- Étape 4 -->
+            <div class="card border-0 shadow-sm mb-4 p-4" data-aos="fade-up" data-aos-delay="350">
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge rounded-pill px-3 py-2 me-3" style="background-color: var(--accent-color); font-size: 0.85rem;">Étape 4</span>
+                <h4 class="mb-0">Présentation orale en anglais</h4>
+              </div>
+              <p class="text-muted mb-3">Restitution orale des résultats et conclusions devant la classe. Présentation des tendances observées dans les confiseries françaises en anglais, à partir des visualisations et analyses produites.</p>
+              <h6 class="fw-semibold mb-2"><i class="bi bi-check2-circle me-2" style="color: var(--accent-color);"></i>Livrables</h6>
+              <ul class="list-unstyled ps-3 mb-0">
+                <li class="mb-1"><i class="bi bi-dot"></i>Support de présentation</li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Synthèse des conclusions et recommandations</li>
+              </ul>
+            </div>
+
+            <!-- Resources -->
+            <div class="card border-0 shadow-sm p-4" data-aos="fade-up" data-aos-delay="400">
+              <h6 class="fw-semibold mb-3"><i class="bi bi-book me-2" style="color: var(--accent-color);"></i>Ressources mobilisées</h6>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill border" style="color: var(--heading-color); border-color: var(--accent-color) !important; padding: 0.5rem 1rem;">R2.06 — Exploitation d'une base de données</span>
+                <span class="badge rounded-pill border" style="color: var(--heading-color); border-color: var(--accent-color) !important; padding: 0.5rem 1rem;">R2.08 — Outils numériques pour les statistiques descriptives</span>
+                <span class="badge rounded-pill border" style="color: var(--heading-color); border-color: var(--accent-color) !important; padding: 0.5rem 1rem;">R2.10 — Introduction à la gestion des systèmes d'information</span>
+                <span class="badge rounded-pill border" style="color: var(--heading-color); border-color: var(--accent-color) !important; padding: 0.5rem 1rem;">R2.12 — Anglais</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT: Description -->
+          <div class="col-lg-7">
+            <div class="position-sticky" style="top: 40px">
+              <div class="portfolio-description">
+
+                <!-- Description -->
+                <div class="info-block">
+                  <h5><i class="bi bi-file-text me-1"></i>Description</h5>
+                  <p>
+                    Ce projet porte sur l'exploitation d'une très grande base de données alimentaires contenant des informations sur les produits du marché français. Notre binôme a choisi de se concentrer sur les confiseries et produits sucrés disponibles en grande surface. Après nettoyage des données et suppression des entrées incomplètes ou incohérentes, nous avons obtenu un jeu de 25 481 produits valides. À partir de ce jeu de données, nous avons mené une analyse nutritionnelle approfondie via des requêtes SQL et des visualisations produites avec R et ggplot2, puis présenté nos conclusions à l'oral en anglais.
+                  </p>
+                </div>
+
+                <hr class="section-divider">
+
+                <!-- Objectifs -->
+                <div class="info-block">
+                  <h5><i class="bi bi-bullseye me-1"></i>Objectifs</h5>
+                  <p>
+                    Réaliser une première approche complète du cycle d'exploitation d'une base de données : nettoyage, interrogation SQL avancée, administration (utilisateurs, rôles, droits) et restitution visuelle des données. L'enjeu était de transformer un volume massif de données brutes en informations exploitables pour analyser les caractéristiques nutritionnelles des confiseries françaises et identifier des tendances entre le Nutriscore et les variables nutritionnelles (glucides, lipides, sucres, protéines, énergie).
+                  </p>
+                </div>
+
+                <hr class="section-divider">
+
+                <!-- Travail en groupe -->
+                <div class="info-block">
+                  <h5><i class="bi bi-people me-1"></i>Travail en groupe</h5>
+                  <p>
+                    Projet réalisé en binôme. La collaboration a couvert toutes les phases : choix du périmètre d'étude, stratégie de nettoyage, écriture des requêtes SQL, sélection des visualisations pertinentes et préparation de la présentation orale. Travailler en binôme a favorisé la complémentarité des approches analytiques et la robustesse des interprétations.
+                  </p>
+                </div>
+
+                <hr class="section-divider">
+
+                <!-- Travail individuel -->
+                <div class="info-block">
+                  <h5><i class="bi bi-person me-1"></i>Travail individuel dans le groupe</h5>
+                  <p>
+                    Au sein du binôme, j'ai pris en charge la production des visualisations R avec ggplot2 — les boxplots de glucides et lipides par Nutriscore, les nuages de points énergie/sucres et énergie/protéines, et les histogrammes ridgelines — ainsi que la rédaction des commentaires analytiques dans le document R Markdown. J'ai également contribué aux requêtes SQL d'agrégation et à la préparation de la présentation orale en anglais. Ce projet m'a permis de découvrir la puissance de la visualisation pour rendre des données complexes accessibles et lisibles.
+                  </p>
+                </div>
+
+                <hr class="section-divider">
+
+                <!-- Techniques & savoir-faire -->
+                <div class="info-block">
+                  <h5><i class="bi bi-tools me-1"></i>Techniques &amp; savoir-faire acquis</h5>
+                  <div>
+                    <span class="tech-tag">SQL avancé</span>
+                    <span class="tech-tag">Nettoyage de données</span>
+                    <span class="tech-tag">Visualisation de données</span>
+                    <span class="tech-tag">R / ggplot2</span>
+                    <span class="tech-tag">R Markdown</span>
+                    <span class="tech-tag">Statistiques descriptives</span>
+                    <span class="tech-tag">Boxplot &amp; scatter plot</span>
+                    <span class="tech-tag">Histogrammes ridgelines</span>
+                    <span class="tech-tag">Administration SGBD</span>
+                    <span class="tech-tag">Analyse nutritionnelle</span>
+                    <span class="tech-tag">Présentation orale en anglais</span>
+                    <span class="tech-tag">Open Food Facts</span>
+                  </div>
+                </div>
+
+                <hr class="section-divider">
+
+                <!-- Info summary -->
+                <div class="portfolio-info">
+                  <h3>Informations</h3>
+                  <ul>
+                    <li><strong>Formation</strong> BUT Informatique — Parcours A</li>
+                    <li><strong>Semestre</strong> S2</li>
+                    <li><strong>Équipe</strong> Binôme</li>
+                    <li><strong>Technologies</strong> SQL, R, ggplot2, R Markdown</li>
+                    <li><strong>Données</strong> Open Food Facts </li>
+                    <li><strong>Compétences</strong> C — Gérer des données (AC14.01, AC14.02, AC14.03)</li>
+                    <li><strong>Établissement</strong> IUT 2 Grenoble</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">EasyFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/soheil-jamshidi-b42774396" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

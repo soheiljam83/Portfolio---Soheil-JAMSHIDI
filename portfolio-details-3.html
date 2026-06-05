@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Base de données— S1.04 </title>
+  <meta name="description" content="S1.04 — Conception et interrogation d'une base de données relationnelle — BUT Informatique Semestre 1">
+  <meta name="keywords" content="SQL, PostgreSQL, Base de données, Modèle relationnel, BUT Informatique, IUT Grenoble">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Noto+Sans:ital,wght@0,100;0,400;0,700&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet"></head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">EasyFolio</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Accueil</a></li>
+          <li><a href="index.html#about">À propos</a></li>
+          <li><a href="index.html#resume">CV</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <div class="header-social-links">
+        
+        <a href="https://www.linkedin.com/in/soheil-jamshidi-b42774396" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="page-title">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Accueil</a></li>
+            <li class="breadcrumb-item"><a href="index.html#portfolio">Semestre 1</a></li>
+            <li class="breadcrumb-item active current">S1.04 — Base de données Bowling</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="title-wrapper">
+        <h1>Conception et interrogation d'une base de données relationnelle</h1>
+        <p>Semestre 1 · BUT Informatique Parcours A · IUT 2 Grenoble</p>
+      </div>
+    </div>
+
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4 g-lg-5">
+
+          <div class="col-lg-5">
+
+            <div class="card border-0 shadow-sm mb-4 p-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge rounded-pill px-3 py-2 me-3" style="background-color: var(--accent-color); font-size: 0.85rem;">Étape 1</span>
+                <h4 class="mb-0">Schéma relationnel &amp; création de la BD</h4>
+              </div>
+              <p class="text-muted mb-3">Dérivation du schéma entités-associations (SEA) en schéma relationnel (SLR), puis écriture des scripts SQL de création, suppression et test de la base.</p>
+              <h6 class="fw-semibold mb-2"><i class="bi bi-check2-circle me-2" style="color: var(--accent-color);"></i>Livrables</h6>
+              <ul class="list-unstyled ps-3 mb-0">
+                <li class="mb-1"><i class="bi bi-dot"></i>SLR annoté (clés primaires, clés étrangères)</li>
+                <li class="mb-1"><i class="bi bi-dot"></i><code>create.sql</code> — contraintes référentielles et d'attribut</li>
+                <li class="mb-1"><i class="bi bi-dot"></i><code>drop.sql</code> — suppression ordonnée des relations</li>
+                <li class="mb-1"><i class="bi bi-dot"></i><code>test.sql</code> — tests des contraintes (PK, FK, CHECK)</li>
+              </ul>
+            </div>
+
+            <div class="card border-0 shadow-sm mb-4 p-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge rounded-pill px-3 py-2 me-3" style="background-color: var(--accent-color); font-size: 0.85rem;">Étape 2</span>
+                <h4 class="mb-0">Peuplement &amp; interrogation</h4>
+              </div>
+              <p class="text-muted mb-3">Insertion de données, traitement de demandes de réservations avec vérification des disponibilités, et écriture de requêtes répondant aux besoins métier exprimés.</p>
+              <h6 class="fw-semibold mb-2"><i class="bi bi-check2-circle me-2" style="color: var(--accent-color);"></i>Livrables</h6>
+              <ul class="list-unstyled ps-3 mb-0">
+                <li class="mb-1"><i class="bi bi-dot"></i>Jeu de données initial (adhérents, pistes, chaussures)</li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Requêtes INSERT avec vérification d'acceptabilité</li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Requêtes SELECT répondant aux besoins (a) à (f)</li>
+                <li class="mb-1"><i class="bi bi-dot"></i><code>etape2.sql</code> (code + résultats)</li>
+              </ul>
+            </div>
+
+            <div class="card border-0 shadow-sm mb-4 p-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge rounded-pill px-3 py-2 me-3" style="background-color: var(--accent-color); font-size: 0.85rem;">Étape 3</span>
+                <h4 class="mb-0">Nouveaux besoins &amp; évolution</h4>
+              </div>
+              <p class="text-muted mb-3">Gestion du stock de chaussures usagées, remplacement d'une piste dégradée, évolution du schéma pour de nouvelles règles métier, et rédaction du bilan critique.</p>
+              <h6 class="fw-semibold mb-2"><i class="bi bi-check2-circle me-2" style="color: var(--accent-color);"></i>Livrables</h6>
+              <ul class="list-unstyled ps-3 mb-0">
+                <li class="mb-1"><i class="bi bi-dot"></i>Relation résultat <code>ETAT_CHAUSSURES</code></li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Requêtes DELETE, UPDATE et ALTER TABLE</li>
+                <li class="mb-1"><i class="bi bi-dot"></i><code>etape3.sql</code> (code + résultats)</li>
+                <li class="mb-1"><i class="bi bi-dot"></i>Bilan critique (PDF)</li>
+              </ul>
+            </div>
+
+            <div class="card border-0 shadow-sm p-4" data-aos="fade-up" data-aos-delay="400">
+              <h6 class="fw-semibold mb-3"><i class="bi bi-book me-2" style="color: var(--accent-color);"></i>Ressources mobilisées</h6>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill border" style="color: var(--heading-color); border-color: var(--accent-color) !important; padding: 0.5rem 1rem;">R1.05 — Bases de données</span>
+                <span class="badge rounded-pill border" style="color: var(--heading-color); border-color: var(--accent-color) !important; padding: 0.5rem 1rem;">R1.04 — Introduction aux systèmes d'information</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7">
+            <div class="position-sticky" style="top: 40px">
+              <div class="portfolio-description">
+
+                <div class="info-block">
+                  <h5><i class="bi bi-file-text me-1"></i>Description</h5>
+                  <p>
+                    Ce projet consiste à concevoir, créer et interroger une base de données relationnelle pour le club de bowling fictif <em>SuperBall</em>. À partir d'un cahier des charges fourni — incluant les règles de gestion, un schéma entités-associations et une expression des besoins — l'équipe a dérivé le schéma relationnel, écrit les scripts SQL de création et de test, peuplé la base, traité des demandes de réservation en vérifiant leur acceptabilité, puis fait évoluer le schéma pour répondre à de nouveaux besoins métier.
+                  </p>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="info-block">
+                  <h5><i class="bi bi-bullseye me-1"></i>Objectifs</h5>
+                  <p>
+                    Maîtriser l'ensemble du cycle de vie d'une base de données relationnelle : de la modélisation (SEA → SLR) jusqu'à l'interrogation avancée et l'évolution du schéma. Savoir traduire des règles métier en contraintes SQL (PRIMARY KEY, FOREIGN KEY, CHECK, NOT NULL), écrire des requêtes SELECT complexes avec jointures et agrégations, et gérer les mises à jour tout en préservant l'intégrité référentielle.
+                  </p>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="info-block">
+                  <h5><i class="bi bi-people me-1"></i>Travail en groupe</h5>
+                  <p>
+                    Projet réalisé en binôme sur trois séances encadrées. La collaboration a été constante tout au long du projet : discussions sur les choix de modélisation, répartition des requêtes à écrire, relecture croisée des scripts SQL et mise en commun des résultats. Travailler à deux a permis de détecter plus rapidement les erreurs de logique et d'enrichir les solutions grâce à des approches complémentaires.
+                  </p>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="info-block">
+                  <h5><i class="bi bi-person me-1"></i>Travail individuel dans le groupe</h5>
+                  <p>
+                    Au sein du binôme, j'ai pris en charge la rédaction des requêtes SELECT les plus complexes (jointures multi-tables, agrégations, gestion des contraintes temporelles) ainsi que la vérification des contraintes d'intégrité et la rédaction du bilan critique. Chaque partie a ensuite été relue et validée conjointement, ce qui m'a appris à produire un code clair et lisible pour une autre personne.
+                  </p>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="info-block">
+                  <h5><i class="bi bi-tools me-1"></i>Techniques &amp; savoir-faire acquis</h5>
+                  <div>
+                    <span class="tech-tag">Modélisation SEA</span>
+                    <span class="tech-tag">Schéma relationnel (SLR)</span>
+                    <span class="tech-tag">SQL — LDD (CREATE / DROP / ALTER)</span>
+                    <span class="tech-tag">SQL — LMD (INSERT / UPDATE / DELETE)</span>
+                    <span class="tech-tag">SQL — Requêtes SELECT</span>
+                    <span class="tech-tag">Jointures &amp; agrégations</span>
+                    <span class="tech-tag">Contraintes d'intégrité</span>
+                    <span class="tech-tag">Gestion des intervalles de temps</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Analyse de besoins métier</span>
+                    <span class="tech-tag">Rédaction d'un bilan critique</span>
+                  </div>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="portfolio-info">
+                  <h3>Informations</h3>
+                  <ul>
+                    <li><strong>Formation</strong> BUT Informatique — Parcours A</li>
+                    <li><strong>Semestre</strong> S1</li>
+                    <li><strong>Durée</strong> 3 séances encadrées</li>
+                    <li><strong>Équipe</strong> Binôme</li>
+                    <li><strong>Technologies</strong> SQL, PostgreSQL</li>
+                    <li><strong>Compétences</strong> Gérer des données (C5)</li>
+                    <li><strong>Établissement</strong> IUT 2 Grenoble</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">EasyFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+      
+        <a href="https://www.linkedin.com/in/soheil-jamshidi-b42774396" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+      </div>
+      
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
